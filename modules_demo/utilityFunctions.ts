@@ -10,5 +10,6 @@ function privateFunc(): void {
 // example of generic function
 export function Purge<T>(inventory: Array<T>): Array<T> {
     // do staff
+    console.log('Purge function is called');
     return inventory.splice(2, inventory.length)
 }

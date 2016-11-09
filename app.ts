@@ -122,9 +122,6 @@ function PrintBook(book:IBook):void{
     console.log(`${book.title} by ${book.author}`)
 }
 
-
-
-
 let inventory: Array<IBook> = [
     { id: 10, title: 'The C Programming Language', author: 'K & R', available: true, category: Category.Software },
     { id: 11, title: 'Code Complete', author: 'Steve McConnell', available: true, category: Category.Software },
@@ -160,8 +157,6 @@ magazineShelf.printTitles()
 // purgedBooks.forEach(book => console.log(book.title));
 
 
-
-
 //
 // let refBook:ReferenceItem = new Encyclopedia('WoldPedia', 1990, 10);
 // refBook.printCitation();
@@ -180,8 +175,6 @@ magazineShelf.printTitles()
 // let favLibrarian: ILibrarian = new UnivesityLibrarian();
 // favLibrarian.name = 'test';
 // favLibrarian.assistCustomer('lala');
-
-
 
 
 

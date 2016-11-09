@@ -4,6 +4,7 @@ interface IShelfItem{
 
 export default class Shelf<T extends IShelfItem>{
     private _items: Array<T> = new Array<T>();
+    constructor(){console.log('new shelf initialized')}
 
     add(item:T){
         this._items.push(item)
