@@ -1,4 +1,4 @@
-import * as Interfaces from './interfaces';
+import * as Interfaces from '../interfaces/interfaces';
 
 
 class UnivesityLibrarian implements Interfaces.ILibrarian {
@@ -32,10 +32,8 @@ abstract class ReferenceItem {
         this._publisher = newPublisher;
     }
 
-    abstract printCitation():void;
+    abstract printCitation(): void;
 }
-
-
 
 
 export {UnivesityLibrarian, ReferenceItem}

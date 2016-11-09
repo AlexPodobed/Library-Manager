@@ -1,4 +1,4 @@
-import {Category} from './enums';
+import {Category} from '../shared/enums';
 
 interface IBook {
     id: number;
@@ -10,29 +10,28 @@ interface IBook {
     markDamaged?: IDamageLogger;
 }
 
-interface IDamageLogger{
-    (reason:string): void;
+interface IDamageLogger {
+    (reason: string): void;
 }
 
-interface IPerson{
-    name:string;
-    email:string;
+interface IPerson {
+    name: string;
+    email: string;
 }
-interface IAuthor extends IPerson{
+interface IAuthor extends IPerson {
     numBooksPublished: number;
 }
 
-interface ILibrarian extends IPerson{
+interface ILibrarian extends IPerson {
     department: string;
-    assistCustomer: (custName:string)=> void;
+    assistCustomer: (custName: string)=> void;
 }
 
 
-interface IMagazine{
+interface IMagazine {
     title: string;
     publisher: string;
 }
-
 
 
 export {IBook, IDamageLogger as Logger, IAuthor, ILibrarian, IMagazine}
